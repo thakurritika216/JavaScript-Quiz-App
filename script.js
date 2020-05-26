@@ -78,35 +78,67 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'Are you ready friends for this quiz?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'A. Yes', correct: true },
+      { text: 'B. NO', correct: false }
+      
+    ] 
+  
+  },
+  {
+    question: 'Given the session PageB> PageA> PageD> PageC> Exit, which Page got the exit?',
+    answers: [
+      { text: 'PageA', correct: false },
+      { text: 'PageB', correct: false },
+      { text: 'PageC', correct: true },
+      { text: 'PageD', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'How do we define an Active user in Real Time reports?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'User who has not triggered any event or page view in last 30 minutes', correct: false },
+      { text: 'User who triggerd an event or page view in last 30 minutes ', correct: true },
+      { text: 'User who has triggerd an event or page view in last 5 minutes', correct: false },
+      { text: 'User who have website open on their device', correct: false }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'What format is used to import data in GA?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'SQL', correct: false },
+      { text: 'Excel', correct: false },
+      { text: 'CSV', correct: true },
+      { text: 'TAB', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'Which of these is not a predefined type of goal in Google Analytics?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'Number of transactions/visit', correct: true },
+      { text: 'Pages/visit', correct: false },
+      { text: 'Destination', correct: false },
+      { text: 'Event', correct: false }
+    ]
+  },
+  {
+  question: 'If you want to look at the search query used to get the visitors on your site, you would look into?',
+  answers: [
+    { text: 'Advertising Report', correct: false },
+    { text: 'Behavior Report', correct: false },
+    { text: 'Acquisition Report', correct: true },
+    { text: 'Audience Reports', correct: false }
+  ]
+},
+  {
+    question: 'What is default session time for Google Analytics? Can this be changed?',
+    answers: [
+      { text: '30 min/Yes', correct: true },
+      { text: '45 min/Yes', correct: false },
+      { text: '30 min/No', correct: false },
+      { text: '45 min/No', correct: false }
     ]
   }
+  
 ]
